@@ -1,0 +1,134 @@
+
+.custom h1 {
+  border-bottom: 1px solid #333;
+  font-size: 32px;
+  color: #fff;
+  padding-bottom: 12px;
+  text-shadow: 0px 0px 2px rgba(0,0,0,0.6);
+}
+
+.custom h2 {
+  margin: 10px 0;
+  color: #000;
+  font-size: 18px;
+  text-shadow: 1px 1px 2px #fff;
+}
+
+.custom h3 {
+  margin: 0;
+  /* background-color: rgb(228,10,85); */
+  background-image: linear-gradient(bottom, rgb(228,10,85) 14%, rgb(255,36,111) 57%);
+  background-image: -o-linear-gradient(bottom, rgb(228,10,85) 14%, rgb(255,36,111) 57%);
+  background-image: -moz-linear-gradient(bottom, rgb(228,10,85) 14%, rgb(255,36,111) 57%);
+  background-image: -webkit-linear-gradient(bottom, rgba(70, 185, 145, 0.72) 14%, rgba(176, 176, 176, 0.26) 57%);
+  background-image: -ms-linear-gradient(bottom, rgb(228,10,85) 14%, rgb(255,36,111) 57%);
+}
+
+.custom h3 a {
+  background: url("sprite.png") 15px 13px no-repeat;
+  display: block;
+  padding: 10px;
+  padding-left: 32px;
+  margin: 3px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: normal;
+  /* border-bottom: 1px solid rgba(128, 10, 85, 0.5); */
+  /* text-shadow: 1px 1px 1px rgb(128,10,85); */
+  font-size: 15px;
+  font-family: droid serif;
+}
+.custom h3:hover { background: rgba(0, 49, 66, 0.54); }
+
+.custom h3.open a { background-position: 13px -25px;Â }
+.custom h3 + div { padding: 10px; }
+.custom h2 + div,
+.example {
+  background: #fff;
+  overflow: hidden;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  margin-bottom: 20px;
+}
+
+/* Pre hide sections with JavaScript on
+--- */
+.custom h3+div {
+  display: none;
+}
+
+/* CSS3 Animation example
+--- */
+.custom h3 + div {
+  height: 0px;
+  padding: 0;
+  overflow: hidden;
+
+  display: block!important;
+  -webkit-transform: translateZ(0);
+  -webkit-transition: all 0.3s ease;
+  moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition:all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.custom .content {
+  padding: 10px;
+}
+.custom p {
+    text-align: justify;
+}
+.custom h3.open + div {
+  height: auto;
+  background: rgba(22, 22, 22, 0.44);
+  padding: 12px;
+}
+
+/* Event example
+--- */
+pre#event-log {
+  background: #fafacc;
+  padding: 10px;
+  display: block;
+}
+
+/* Responsive design
+--- */
+@media screen and (max-width: 1056px) {
+  body {
+    width: 672px;
+  }
+  .c2 {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+}
+
+.test { background: #ccc; padding: 10px; border-bottom: 1px solid #aaa;}
+.test + div { background: #fff; padding: 10px; }
+
+@media
+only screen and (max-width: 704px),
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+  body {
+    width: 320px;
+  }
+  .c1 {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+  h1 {
+    font-size: 28px;
+    text-shadow: 0px 0px 1px rgba(0,0,0,0.7);
+  }
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+  body {
+    padding: 0 12px;
+  }
+}
